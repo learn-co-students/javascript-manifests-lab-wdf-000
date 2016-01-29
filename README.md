@@ -15,3 +15,5 @@ Tell them to create an application manifest with 3 of the 5 js files put in rand
 Then they should do the same (2 new JS files, 1 from the application manifest too so that they know JS files don't need to be unique to one manifest vs the other) for the admin manifest and admin layout.
 
 the admin layout should also javascript_include_tag another random JS file that isn't in the manifest but is in app/assets so they know how to include a non manifested js file.
+
+<p data-visibility='hidden'>View <a href='https://learn.co/lessons/javascript-manifests-lab' title='Javascript Manifests Lab'>Javascript Manifests Lab</a> on Learn.co and start learning to code for free.</p>
