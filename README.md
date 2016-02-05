@@ -7,16 +7,16 @@
 3. Include Javascript Manifest Files in Layouts
 
 ## Outline
-Located in the lab repository is a simple Rails application called `javascript_manifest_rails`. Your job is to assemble two valid JavaScript manifest files, one for the Admin layout and one for the Application layout. There is also a file hidden somewhere that you will need to find and move to allow for loading.
+Located in the lab repository is a simple Rails application called `javascript_manifest_rails`. Your job is to assemble two valid JavaScript manifest files, one for the Admin layout and one for the Application layout. There is also a file we're currently trying to load that's causing an error.  Figure out how to fix it.  To see the error load the homepage in the browser.
 
 ### Application Layout
-- Create an application manifest with 3 of the js files found throughout the application.
+- Create an application manifest with some of the js files found throughout the applications valid javascript asset directories.  Add `alert_maker.js` and `main.js`.  Move `wrong_place_wrong_time.js` into the correct directory and load it as well.
 - Load your manifest into the application layout.
 
 ### Admin Layout
-- Choose 2 new JS files that you didn't include in the application manifest and 1 that you did and create an admin manifest.
+- Load `hello_world.js`, `doesn_nothing.js` in the admin manifest.
 - Load your manifest into the admin layout. 
-- Add an addition `javascript_include_tag` to the admin layout and load the final remaining JS file.
+- Add an additional `javascript_include_tag` to the admin layout and use it to load `main.js`.
 
 When you finish, start the rails server with `rails server` and browse to http://localhost:3000 for the Application layout and http://localhost:3000/admin for the Admin layout. If you open Chrome dev tools and go to the elements tab, you should see the files you included in your manifest files as script tags in the head tag.
 
