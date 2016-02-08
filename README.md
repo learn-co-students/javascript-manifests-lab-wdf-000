@@ -7,13 +7,17 @@
 3. Include Javascript Manifest Files in Layouts
 
 ## Outline
+Located in the lab repository is a simple Rails application called `javascript_manifest_rails`. Your job is to assemble two valid JavaScript manifest files, one for the Admin layout and one for the Application layout. There is also a file we're currently trying to load that's causing an error.  Figure out how to fix it.  To see the error load the homepage in the browser.
 
-Give them a rails app with a few js files in random asset paths like app/assets and vendor/assets and one file in the wrong place (like lib/) so they also have to move the file. Delete the manifest file. Give them two layouts, an application layout and an admin layout.
+### Application Layout
+- Create an application manifest with some of the js files found throughout the applications valid javascript asset directories.  Add `alert_maker.js` and `main.js`.  Move `wrong_place_wrong_time.js` into the correct directory and load it as well.
+- Load your manifest into the application layout.
 
-Tell them to create an application manifest with 3 of the 5 js files put in random places. Then they need to load that manifest into the application layout.
+### Admin Layout
+- Load `hello_world.js`, `doesn_nothing.js` in the admin manifest.
+- Load your manifest into the admin layout. 
+- Add an additional `javascript_include_tag` to the admin layout and use it to load `main.js`.
 
-Then they should do the same (2 new JS files, 1 from the application manifest too so that they know JS files don't need to be unique to one manifest vs the other) for the admin manifest and admin layout.
-
-the admin layout should also javascript_include_tag another random JS file that isn't in the manifest but is in app/assets so they know how to include a non manifested js file.
+When you finish, start the rails server with `rails server` and browse to http://localhost:3000 for the Application layout and http://localhost:3000/admin for the Admin layout. If you open Chrome dev tools and go to the elements tab, you should see the files you included in your manifest files as script tags in the head tag.
 
 <p data-visibility='hidden'>View <a href='https://learn.co/lessons/javascript-manifests-lab' title='Javascript Manifests Lab'>Javascript Manifests Lab</a> on Learn.co and start learning to code for free.</p>
