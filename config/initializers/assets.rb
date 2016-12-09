@@ -9,3 +9,11 @@ Rails.application.config.assets.precompile += %w( learn.js )
 # Precompile additional assets.
 # application.js, application.css, and all non-JS/CSS in app/assets folder are already added.
 # Rails.application.config.assets.precompile += %w( search.js )
+
+
+# Rails.application.config.assets.paths => 
+# [
+#   "/Users/flatironschool/Development/code/Javascript/javascript-manifests-lab-wdf-000/app/assets/javascripts/application.js",
+#   "/Users/flatironschool/Development/code/Javascript/javascript-manifests-lab-wdf-000/app/assets/stylesheets/application.css",
+#
+# ]
