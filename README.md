@@ -10,7 +10,7 @@
 Located in the lab repository is a simple Rails application called `javascript_manifest_rails`. Your job is to assemble two valid JavaScript manifest files, one for the Admin layout and one for the Application layout. There is also a file we're currently trying to load that's causing an error.  Figure out how to fix it.  To see the error load the homepage in the browser.
 
 ### Application Layout
-- Create an application manifest with some of the js files found throughout the applications valid javascript asset directories.  Add `alert_maker.js` and `main.js`.  Move `wrong_place_wrong_time.js` into the correct directory and load it as well.
+- Create an application manifest with some of the js files found throughout the application's valid javascript asset directories.  Add `alert_maker.js` and `main.js`.  Move `wrong_place_wrong_time.js` into the correct directory and load it as well.
 - Load your manifest into the application layout.
 
 ### Admin Layout
